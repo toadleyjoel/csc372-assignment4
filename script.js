@@ -17,10 +17,10 @@ let isPlaying = false; // Prevents clicking multiple times during animation
 
 const choices = ['rock', 'paper', 'scissors'];
 const imagePaths = {
-    rock: 'images/rock.png',
-    paper: 'images/paper.png',
-    scissors: 'images/scissors.png',
-    question: 'images/question-mark.png'
+    rock: './images/rock.png',
+    paper: './images/paper.png',
+    scissors: './images/scissors.png',
+    question: './images/question-mark.png'
 };
 
 // The actual DOM Elements
