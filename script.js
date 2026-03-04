@@ -20,7 +20,7 @@ const imagePaths = {
     rock: 'images/rock.png',
     paper: 'images/paper.png',
     scissors: 'images/scissors.png',
-    question: 'images/question.png'
+    question: 'images/question-mark.png'
 };
 
 // The actual DOM Elements
