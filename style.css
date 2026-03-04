@@ -1,0 +1,81 @@
+/*
+  Name: Joel Pickett
+  Date: 03.03.2026
+  CSC 372-01
+
+  This is the style.css file for my JavaScript Callback assignment. 
+  It includes the stylesheet of the page for the Rock, Paper, Scissors game.
+*/
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.player-choice, #computer-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    cursor: pointer;
+    border: 4px solid transparent; /* Default transparent border */
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.player-choice:hover {
+    transform: scale(1.05);
+}
+
+/* The class applied via JS when a player clicks an image */
+.selected {
+    border-color: #5ad94f; 
+}
+
+.computer-throw-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+}
+
+#computer-image {
+    cursor: default;
+    border-color: #d81702;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}

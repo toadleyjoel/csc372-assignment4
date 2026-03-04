@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+  Name: Joel Pickett
+  Date: 03.03.2026
+  CSC 372-01
+
+  This is the index.html page for my JavaScript Callback assignment. 
+  It includes the layout of the page for the Rock, Paper, Scissors game.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ROCK, PAPER, SCISSORS... SHOOT!</h1>
+    </header>
+
+    <main>
+        <section id="player-section">
+            <div class="choices">
+                <img src="images/rock.PNG" alt="Rock" id="player-rock" class="player-choice" data-choice="rock">
+                <img src="images/paper.PNG" alt="Paper" id="player-paper" class="player-choice" data-choice="paper">
+                <img src="images/scissors.PNG" alt="Scissors" id="player-scissors" class="player-choice" data-choice="scissors">
+            </div>
+            <h2>PLAYER THROW</h2>
+        </section>
+
+        <section id="computer-section">
+            <div class="computer-throw-container">
+                <img src="images/question-mark.PNG" alt="Waiting..." id="computer-image">
+            </div>
+            <h2>COMPUTER THROW</h2>
+        </section>
+
+        <section id="outcome-section">
+            <h2 id="result-text">RESULTS: WAITING TO PLAY...</h2>
+            <button id="reset-button">Play Again / Reset</button>
+        </section>
+
+        <section id="score-section">
+            <h3>Current Score</h3>
+            <p>Wins: <span id="win-count">0</span> | Losses: <span id="loss-count">0</span> | Ties: <span id="tie-count">0</span></p>
+        </section>
+    </main>
+
+
+</body>
+</html>
